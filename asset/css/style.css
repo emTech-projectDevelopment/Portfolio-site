@@ -25,6 +25,8 @@ a:hover {
     color: white;
     transform: scale(1.1);
     font-weight: 500;
+    margin-left: 10px;
+    text-decoration: none;
 }
 
 body {
@@ -33,6 +35,7 @@ body {
     position: relative;
     z-index: 1;
     background: repeating-radial-gradient(circle at 100%, rgb(236, 234, 234), rgba(65, 45, 65, 0.612) 50%, rgb(205, 202, 202) 75%, rgb(255, 4, 71) 25%);
+    background: repeating-radial-gradient(circle at 100%, rgba(131, 91, 91,.6), rgba(65, 45, 65, 0.7) 60%, rgb(205, 202, 202) 65%, rgb(255, 4, 71) 15%);
     background-size: cover;
 }
 
@@ -57,7 +60,9 @@ body {
         visibility: visible;
     }
 }
-
+.section-word {
+    animation: flash 2s 0s infinite;
+}
 .text-center {
     width: auto;
     text-align: center;
@@ -287,20 +292,81 @@ project-image > img:hover {
 }
 
 .contact-wrapper {
-    width: 80%;
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 5px 10px;
+    display: flex;
+    background: rgba(0, 0, 0, 0.108);
+    border-radius: 10%;
+    border: 2px double white;
+
+}
+.my-contacts {
+    width: 90%;
     height: auto;
     display: flex;
+    flex-direction: column;
+    overflow: scroll;
 }
-.form-container {
-    width: 50%;
+.my-contact {
+    letter-spacing: 2px;
+    color: var(--secondary);
+    text-shadow: 0px 0px 1px white;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin: 3% 5px;
 }
+
+.my-contact a {
+    font-size: small;
+    color: white;
+    text-shadow: 0px 0px 1px white;
+}
+
+.my-contact:hover {
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 1px black;
+}
+
+.form-container {
+    width: 90%;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px double white;
+    border-radius: 10%;
+    
+}
+
 input {
-    width: 60%;
+    width: 90%;
+    outline: navajowhite;
+    padding: 0px 3px;
+    border: none;
+    border-radius: 10px;
 }
 .form-greeting {
+    color: white;
+    text-shadow: 0px 0px 1px black;
+}
 
+.form-label {
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    margin: 0;
+}
+
+.submit-btn {
+    width: 50%;
+    padding: 2px 4px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 10%;
+    outline: navajowhite;
+    background: var(--secondary);
+    
 }
 
 footer {
@@ -373,8 +439,15 @@ footer {
         flex-shrink: flex-end;
     }
     .resume {
-        width: 80%;
+        width: 100%;
         margin: 10px auto;
+    }
+    .contact-wrapper {
+        margin: 3% auto;
+        flex-direction: column;
+    }
+    .form-container {
+        width: 100%;
     }
 }
 @media(max-width: 450px){
@@ -412,38 +485,38 @@ footer {
 
 .top-ball {
     position: absolute;
-    top: 10%;
-    right: 20%;
+    top: 5%;
+    right: 8%;
     overflow: hidden;
     float: left;
-    width: 140px;
-    height: 140px;
+    width: 300px;
+    height: 300px;
     background: none;
     border-radius: 50%;
-    animation: flash 3s none 0s linear infinite reverse;
+    animation: flash 4s none 0s linear infinite reverse;
 }
 
 .top-ball-2 {
     position: absolute;
-    top: 22%;
-    right: 55%;
+    top: 15%;
+    right: 50%;
     overflow: hidden;
     float: left;
-    width: 140px;
-    height: 140px;
+    width: 380px;
+    height: 380px;
     background: none;
     border-radius: 50%;
-    animation: flash 3s none 1s linear infinite reverse;
+    animation: flash 3.5s none 1s linear infinite;
 }
 
 .middle-ball {
     position: absolute;
-    top: 35%;
-    right: 30%;
+    top: 25%;
+    right: 15%;
     overflow: hidden;
     float: left;
-    width: 140px;
-    height: 140px;
+    width: 300px;
+    height: 300px;
     background: none;
     border-radius: 50%;
     animation: flash 5s none 0s linear infinite reverse;
@@ -451,28 +524,28 @@ footer {
 
 .middle-ball-2 {
     position: absolute;
-    top: 45%;
-    right: 75%;
+    top: 35%;
+    right: 70%;
     overflow: hidden;
     float: left;
-    width: 140px;
-    height: 140px;
+    width: 280px;
+    height: 280px;
     background: none;
     border-radius: 50%;
-    animation: flash 4s none 2s linear infinite reverse;
+    animation: flash 4s none 2s linear infinite;
 }
 
 .bottom-ball {
     position: absolute;
-    top: 55%;
-    right: 25%;
+    top: 47%;
+    right: 1%;
     overflow: hidden;
     float: left;
-    width: 140px;
-    height: 140px;
+    width: 500px;
+    height: 500px;
     background: none;
     border-radius: 50%;
-    animation: flash 3.5s none 0s linear infinite;
+    animation: flash 3.5s none 0s linear infinite  reverse;
 }
 
 .bottom-ball-1 {
@@ -481,8 +554,8 @@ footer {
     right: 60%;
     overflow: hidden;
     float: left;
-    width: 140px;
-    height: 140px;
+    width: 300px;
+    height: 300px;
     background: none;
     border-radius: 50%;
     animation: flash 5s none 500ms linear infinite;
@@ -490,15 +563,15 @@ footer {
 
 .bottom-ball-2 {
     position: absolute;
-    top: 87%;
-    right: 40%;
+    top: 80%;
+    right: 20%;
     overflow: hidden;
     float: left;
-    width: 140px;
-    height: 140px;
+    width: 300px;
+    height: 300px;
     background: none;
     border-radius: 50%;
-    animation: flash 3s none 0s linear infinite;
+    animation: flash 3.5s none 0s linear infinite reverse;
 }
 
 @keyframes flash {
@@ -530,9 +603,11 @@ footer {
         transform: rotate(360deg);
     }
 }
-    /* 0% {
+
+
+    /* 1% {
         transform: rotate(45deg);
-        box-shadow: 1px 1px 3px aqua;
+        box-shadow: 1px 1px 2px blue;
     }
     25% {
         transform: rotate(90deg);
@@ -544,10 +619,10 @@ footer {
     }
     75% {
         transform: rotate(260deg);
-        box-shadow: 1px 1px 3px yellow;
+        box-shadow: 1px 1px 1px yellow;
     }
-    100% {
+    99% {
         transform: rotate(360deg);
-        box-shadow: 1px 1px 3px aqua;
+        box-shadow: 1px 1px 4px purple;
     }
 } */
