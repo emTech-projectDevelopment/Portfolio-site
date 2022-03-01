@@ -94,6 +94,7 @@ body {
     width: 80%;
     height: 8%;
     position: relative;
+    z-index: 5;
     display: flex;
     visibility: hidden;
     flex-direction: column;
@@ -182,6 +183,8 @@ body {
     width: 100%;
     height: auto;
     display: block;
+    position: relative;
+    z-index: 5;
 }
 
 .projects-wrapper {
@@ -200,6 +203,7 @@ body {
      margin: .5rem;
      padding: .5rem .7rem;
      display: flex;
+     
      background: rgba(255, 255, 255, 0.1);
      border: 1px double rgba(255,255,255, 0.2);
      border-radius: 10%;
@@ -242,6 +246,8 @@ project-image > img:hover {
     width: 100%;
     height: auto;
     margin: 20px auto;
+    position: relative;
+    z-index: 5;
 }
 .resume-text {
     margin-top: 10px;
@@ -278,7 +284,7 @@ project-image > img:hover {
     padding: 10px;
     border-radius: 6%;
     box-shadow: 0px 0px 10px rgba(161, 158, 175, 0.521);
-    transition: 2.6s;
+    transition: 1s;
 }
 
 .resume-image:hover {
@@ -289,6 +295,8 @@ project-image > img:hover {
     width: 100%;
     height: auto;
     display: block;
+    position: relative;
+    z-index: 5;
 }
 
 .contact-wrapper {
