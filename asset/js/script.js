@@ -31,5 +31,26 @@ function populateprojects(data){
         projectsWrapper.innerHTML +=  projectItemsHtml;
     }
 }  
- 
+
+const contacts = [
+    {name: 'Telephone', contact : '0421 224 777'},
+    {name: 'Email', contact : 'emtech.projectdevelopment@gmail'},
+    {name : 'LinkedIn', contact : 'linkedin.com/in/elias- matta-b28858227/'},
+    {name : 'GitHub', contact : 'github.com/emTech-projectDevelopment'}
+]
+
+function populateContacts(data){
+    const contactsWrapper = document.querySelector('.my-contacts')
+
+    for (let i=0; i<contacts.length; i++) {
+        let contactsHTML = 
+        `<div class="my-contact">
+            <span>${data[i].name}</span>
+            <a>${data[i].contact}</a>
+        </div>`;
+        contactsWrapper.innerHTML += contactsHTML
+    }
+}
+
+populateContacts(contacts)
 populateprojects(projectItems)

@@ -30,27 +30,30 @@ a:hover {
 body {
     width: 100vw;
     height: 100%;
-    background: repeating-radial-gradient(circle at 100%, rgb(131, 91, 91), rgb(65, 45, 65) 50%, rgb(205, 202, 202) 75%, rgb(255, 4, 71) 75%);
+    position: relative;
+    z-index: 1;
+    background: repeating-radial-gradient(circle at 100%, rgb(236, 234, 234), rgba(65, 45, 65, 0.612) 50%, rgb(205, 202, 202) 75%, rgb(255, 4, 71) 25%);
     background-size: cover;
 }
 
 .section-title {
     margin: 10px auto;
-    color: var(--heading);
+    color: silver;
     visibility: hidden;
-    text-shadow: 0px 0px 8px rgb(255, 255, 255);
-    animation: incoming 2.4s 500ms ease-in 1 forwards;
+    text-shadow: none;
+    animation: incoming 2.4s 400ms ease-out 1 forwards;
 }
+
 @keyframes incoming {
     from {
         margin-left: 150%;
     }
     to {
         font-size: 1.8rem;
-        color: rgb(223, 220, 220);
+        color: var(--heading);
         width: auto;
         margin: 0;
-        text-shadow: 0px 0px 5px black;
+        text-shadow: 1px 1px 5px white;
         visibility: visible;
     }
 }
@@ -63,6 +66,8 @@ body {
 .container {
     width: 90%;
     height: 100%;
+    position: relative;
+    z-index: 1;
     padding: 1rem 0.5rem;
     margin: auto;
     display: flex;
@@ -281,6 +286,19 @@ project-image > img:hover {
     display: block;
 }
 
+.contact-wrapper {
+    width: 80%;
+    height: auto;
+    display: flex;
+}
+.form-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+input {
+    width: 60%;
+}
 .form-greeting {
 
 }
@@ -384,3 +402,152 @@ footer {
         margin: -10px auto 10px auto;
     }
 }
+
+.ball-background {
+    width: 220px;
+    height: 330px;
+    position: absolute;
+    z-index: -10;
+}
+
+.top-ball {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    overflow: hidden;
+    float: left;
+    width: 140px;
+    height: 140px;
+    background: none;
+    border-radius: 50%;
+    animation: flash 3s none 0s linear infinite reverse;
+}
+
+.top-ball-2 {
+    position: absolute;
+    top: 22%;
+    right: 55%;
+    overflow: hidden;
+    float: left;
+    width: 140px;
+    height: 140px;
+    background: none;
+    border-radius: 50%;
+    animation: flash 3s none 1s linear infinite reverse;
+}
+
+.middle-ball {
+    position: absolute;
+    top: 35%;
+    right: 30%;
+    overflow: hidden;
+    float: left;
+    width: 140px;
+    height: 140px;
+    background: none;
+    border-radius: 50%;
+    animation: flash 5s none 0s linear infinite reverse;
+}
+
+.middle-ball-2 {
+    position: absolute;
+    top: 45%;
+    right: 75%;
+    overflow: hidden;
+    float: left;
+    width: 140px;
+    height: 140px;
+    background: none;
+    border-radius: 50%;
+    animation: flash 4s none 2s linear infinite reverse;
+}
+
+.bottom-ball {
+    position: absolute;
+    top: 55%;
+    right: 25%;
+    overflow: hidden;
+    float: left;
+    width: 140px;
+    height: 140px;
+    background: none;
+    border-radius: 50%;
+    animation: flash 3.5s none 0s linear infinite;
+}
+
+.bottom-ball-1 {
+    position: absolute;
+    top: 70%;
+    right: 60%;
+    overflow: hidden;
+    float: left;
+    width: 140px;
+    height: 140px;
+    background: none;
+    border-radius: 50%;
+    animation: flash 5s none 500ms linear infinite;
+}
+
+.bottom-ball-2 {
+    position: absolute;
+    top: 87%;
+    right: 40%;
+    overflow: hidden;
+    float: left;
+    width: 140px;
+    height: 140px;
+    background: none;
+    border-radius: 50%;
+    animation: flash 3s none 0s linear infinite;
+}
+
+@keyframes flash {
+    15% {
+        box-shadow: none;
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    38% {
+        transform: rotate(138deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    60% {
+        box-shadow: 1px 1px 3px white;
+        background: rgba(94, 17, 17, 0.05);
+        transform: rotate(230deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    87% {
+        transform: rotate(317deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+    /* 0% {
+        transform: rotate(45deg);
+        box-shadow: 1px 1px 3px aqua;
+    }
+    25% {
+        transform: rotate(90deg);
+        box-shadow: 1px 1px 3px lightblue;
+    }
+    50% {
+        transform: rotate(180deg);
+        box-shadow: 1px 1px 3px rgb(81, 255, 0);
+    }
+    75% {
+        transform: rotate(260deg);
+        box-shadow: 1px 1px 3px yellow;
+    }
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 1px 1px 3px aqua;
+    }
+} */

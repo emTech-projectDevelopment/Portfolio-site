@@ -6,18 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous">
-      <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./asset/css/style.css">
     <title>Elias Matta Portfolio Site</title>
 </head>
 
 <body>
     <div class="container">
-        
+
         <!-- Nav -->
         <div id="nav-hero">
             <h1 class="nav-head">emTech Project Development</h1>
@@ -36,7 +34,8 @@
             <div class="about-text">
                 <h2 class="about-title"> Full Stack Web Developement <br>|<br> &nbsp Software Development </h2>
                 &nbsp
-                <p class="about-description">Helping small business gain exposure with up to date tech skills. <br> <br>Building business software and helping business automate processes.</p>
+                <p class="about-description">Helping small business gain exposure with up to date tech skills. <br>
+                    <br>Building business software and process automation.</p>
             </div>
         </section>
 
@@ -45,6 +44,7 @@
         <section id="projects">
             <h2 class="section-title">Projects</h2>
             <div class="projects-wrapper">
+                <!-- Dynamic JS -->
             </div>
         </section>
 
@@ -53,56 +53,76 @@
             <h3 class="section-title">Profile</h3>
             <div class="resumes">
                 <div class="resume">
-                    <a href="./asset/files/EliasMatta-CoverResume.pdf"><img class="resume-image" src="./asset/images/tech-resume.png"/></a>
+                    <a href="./asset/files/EliasMatta-CoverResume.pdf" target="_blank"><img class="resume-image"
+                            src="./asset/images/tech-resume.png" /></a>
                     <p class="resume-text text-center">Tech Industry Resume</p>
                 </div>
                 <div class="resume">
-                    <a href="./asset/files/EliasMatta-CoverResume.pdf"><img class="resume-image" src="./asset/images/tech-resume.png"/></a>
+                    <a href="./asset/files/EliasMatta-CoverResume.pdf" target="_blank"><img class="resume-image"
+                            src="./asset/images/tech-resume.png" /></a>
                     <p class="resume-text text-center">Hospitality Industry Resume</p>
                 </div>
             </div>
         </section>
 
+
         <section id="contact">
             <h3 class="section-title">Contact</h3>
-            <form action="#">
-                <div class="form-greeting">
-                    <h3>Say Hello!</h3>
-                    <p>Have a project in mind? We are always keen to get in touch!</p>
+            <div class="contact-wrapper">
+                <div class="my-contacts">
+                    <!-- Dynamic JS -->
                 </div>
-                <label class="form-label" for="name">Full Name</label>
-                <input type="text" name="name" id="name-field" placeholder="full name">
-                <label class="form-label" for="email">Email</label>
-                <input type="email" name="email" id="email-field" placeholder="email">
-                <label for="telephone">Telephone</label>
-                <input type="telephone" name="telephone" id="telephone-field" placeholder="telephone">
-                <button type="submit">Send</button>
-            </form>
+
+                <form action="#" class="form-container">
+                    <div class="form-greeting">
+                        <h3>Say Hello!</h3>
+                        <p>Have a project in mind? We are always keen to get in touch!</p>
+                    </div>
+                    <label class="form-label" for="name">Full Name</label>
+                    <input type="text" name="name" id="name-field" placeholder="full name">
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" name="email" id="email-field" placeholder="email">
+                    <label for="telephone">Telephone</label>
+                    <input type="telephone" name="telephone" id="telephone-field" placeholder="telephone">
+                    <label for="description">Project Description</label>
+                    <input type="text" name="description" id="project-description" placeholder="project description">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </section>
 
         <br>
         <footer>
-            
+
             &copy emTech 2022
         </footer>
+
+        <!--Ball Animations-->
+        <div class="ball-backround">
+            <div class="top-ball"></div>
+            <div class="top-ball-2"></div>
+            <div class="middle-ball"></div>
+            <div class="middle-ball-2"></div>
+            <div class="bottom-ball"></div>
+            <div class="bottom-ball-1"></div>
+            <div class="bottom-ball-2"></div>
+        </div>
 
     </div>
     <!-- Custom JS-->
     <script src="./asset/js/script.js"></script>
     <!-- Jqueary -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <!-- popper -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
     <!-- bootstrap js -->
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
