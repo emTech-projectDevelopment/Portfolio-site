@@ -24,8 +24,10 @@ function populateprojects(data){
                     <img class="project-image" src=${data[i].imgSrc} alt=${data[i].imgAlt}/>
                 <a/>
                 <p class="project-description">${data[i].projectDescription}</p>
+                <br>
                 <a class="project-link" href=${data[i].repo}>${data[i].title} Github Repository</a>
                 <a class="project-link" href=${data[i].live}>${data[i].title} Github Live Site</a>
+                <span class="text-right">Click link to view<span>
          </div>`;
 
         projectsWrapper.innerHTML +=  projectItemsHtml;
