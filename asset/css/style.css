@@ -671,7 +671,7 @@ footer {
     border-radius: 50%;
     animation: flash 3.5s none 0s linear infinite reverse;
 }
-/*
+
 @keyframes flash {
     15% {
         box-shadow: none;
@@ -700,4 +700,4 @@ footer {
     100% {
         transform: rotate(360deg);
     }
-}*/
+}
