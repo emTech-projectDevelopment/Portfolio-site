@@ -28,6 +28,7 @@
 
         <!-- Nav -->
         <div id="nav-hero">
+            <span class="nav-hero-badge"></span>
             <h1 class="nav-head"><span class="black-letter">e</span>mTech <span class="black-letter">P</span>roject <span class="black-letter">D</span>evelopment</h1>
             <div class="nav-bar">
                 <a class="nav-link" href="#projects">Projects</a>
@@ -89,14 +90,14 @@
                     </div>
                     &nbsp;
                     <label class="form-label" for="name">Full Name</label>
-                    <input type="text" name="name" id="name-field" placeholder="full name">&nbsp
+                    <input type="text" name="name" id="name-field" placeholder="full name" required>&nbsp
                     <label class="form-label" for="email">Email</label>
-                    <input type="email" name="email" id="email-field" placeholder="email">&nbsp
+                    <input type="email" name="email" id="email-field" placeholder="email" required>&nbsp
                     <label class="form-label" for="telephone">Telephone</label>
                     <input type="telephone" name="telephone" id="telephone-field" placeholder="telephone">&nbsp
                     <label class="form-label" for="description">Project Description</label>
-                    <input type="textarea" name="description" id="project-description" placeholder="project description">
-                    <button class="submit-btn" type="submit">Submit</button>
+                    <input type="textarea" name="description" id="project-description" placeholder="project description" required>
+                    <button class="submit-btn" type="submit" onclick="sozBud()">Submit</button>
                 </form>
             </div>
         </section>

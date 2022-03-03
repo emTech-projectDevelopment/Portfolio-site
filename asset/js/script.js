@@ -54,5 +54,9 @@ function populateContacts(data){
     }
 }
 
+function sozBud(){
+    alert('Sorry! I dont have the right functionality yet!')
+}
+
 populateContacts(contacts)
 populateprojects(projectItems)
