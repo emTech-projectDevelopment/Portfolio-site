@@ -1,6 +1,6 @@
 console.log('Script Ready')
 
-const screenshots = './asset/images/Project Screenshots/'
+const screenshots = './asset/images/Project Screenshots/';
 
 const projectItems = [
     {title: "JS Calculator", projectDescription : "Calculator App using HTML, CSS and Javascript", repo: "https://github.com/emTech-projectDevelopment/Calculator-Project", live: "https://emtech-projectdevelopment.github.io/Calculator-Project/", imgSrc: "./asset/images/Project-Screenshots/CALCULATOR-JS.png", imgAlt: "JS Calculator"},
@@ -24,10 +24,11 @@ function populateprojects(data){
                     <img class="project-image" src=${data[i].imgSrc} alt=${data[i].imgAlt}/>
                 <a/>
                 <p class="project-description">${data[i].projectDescription}</p>
-                <br>
+                <span class="project-link-help">Click link to view</span>
+                &nbsp
                 <a class="project-link" href=${data[i].repo}>${data[i].title} Github Repository</a>
                 <a class="project-link" href=${data[i].live}>${data[i].title} Github Live Site</a>
-                <span class="text-right">Click link to view<span>
+                
          </div>`;
 
         projectsWrapper.innerHTML +=  projectItemsHtml;
@@ -60,3 +61,4 @@ function sozBud(){
 
 populateContacts(contacts)
 populateprojects(projectItems)
+

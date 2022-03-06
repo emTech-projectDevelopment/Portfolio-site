@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 section {
     margin: 3% auto;
 }
@@ -43,6 +47,11 @@ a.nav-link:hover {
     text-decoration: none;
 }
 
+br {
+    margin: 0px;
+    padding: 2px 0px;
+}
+
 body {
     font-family: var(--font-noto);
     width: 100vw;
@@ -54,14 +63,6 @@ body {
     background: repeating-radial-gradient(circle at 100%,rgba(0, 0, 0, 0.776) 69%,  rgba(0, 0, 0, 0.776) 60%, rgba(68, 48, 48, 0.6) 70%, rgba(12, 10, 5, 0.534) 72%);
     background: repeating-radial-gradient(circle at 100%,rgba(0, 0, 0, 0.776) 69%,  rgba(0, 0, 0, 0.776) 60%, rgba(68, 48, 48, 0.6) 70%, rgba(12, 10, 5, 0.534) 90%);
     background-repeat: no-repeat;
-}
-
-.text-right  {
-    margin-top: 1rem;
-    margin-left: 40%;
-    color: var(--font-color);
-    text-shadow: -1px 0px 1px var(--heading);
-    float: bottom;
 }
 
 .section-title {
@@ -82,7 +83,7 @@ body {
         font-weight: bold;
         letter-spacing: 4px;
         color: var(--font-color);
-        text-shadow: -1px 0px 1.5px var(--heading);
+        text-shadow: -1px 1px 2px var(--heading);
         visibility: visible;
     }
 }
@@ -246,16 +247,17 @@ h1, h2, h3, h4, h5, h6 {
     width: 75%;
 }
 .about-title {
+    font-size: 1.8rem;
     letter-spacing: 1.4px;
     color: var(--font-color);
-    text-shadow: -1px 0px 1.4px var(--heading);
+    text-shadow: -1px 1px 5px var(--heading);
     font-variant: small-caps;
 }
 .about-description {
-    font-size: 1rem;
+    font-size: 1.4rem;
     letter-spacing: 1.4px;
     color: var(--font-color);
-    text-shadow: -1px 0px 2.3px var(--heading);
+    text-shadow: -1px 1px 5px var(--heading);
 }
 
 /* Project Items */
@@ -269,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .projects-wrapper {
     width: auto;
-    height: 45%;
+    height: auto;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -286,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
      background: rgba(255, 255, 255, 0.1);
      border: 1px double rgba(255,255,255, 0.2);
      border-radius: 10%;
-     font-size: smaller;
+     font-size: 1.2rem;
      flex-direction: column;
      text-align: center;
  }
@@ -307,28 +309,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 .project-title {
     color: var(--font-color);
-    font-size: large;
+    font-size: larger;
     font-weight: 500;
-    text-shadow: 0px 0px 1.5px var(--heading);
+    text-shadow: -1px 1px 1.5px var(--heading);
 }
 .project-description {
+    height: auto;
     font-size: medium;
     color: var(--font-color);
-    text-shadow: 0px 0px 5px black;
+    text-shadow: -1px 1px 2px var(--heading);
 }
 
 .project-link {
-    font-size: 0.9rem;
+    padding: 2px 0px !important;
+    font-size: 1rem;
     padding: 1.5px 0px;
     color: var(--font-color);
     text-shadow: -1px 0px 1px var(--heading);
-    transition: 300ms;
+    transition: 400ms;
 }
 .project-link:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
+    letter-spacing: -0.5px;
     font-family: sans-serif;
     color: var(--font-color);
     text-shadow: -1px 1px 2px var(--heading);
+}
+
+.project-link-help {
+    margin: auto;
+    padding: 10px 0px !important;
+    color: var(--font-color);
+    text-shadow: -1px 1px 1.5px var(--heading);
 }
 
 #profile {
@@ -591,7 +603,12 @@ footer {
     h4, 
     h5, 
     h6 {
-    font-size: larger;
+    font-size: 1.8rem;
+    }
+
+    a,
+    p {
+        font-size: 1.3rem !important;
     }
 
     .nav-head {
@@ -732,6 +749,8 @@ footer {
         transform: rotate(90deg);
     }
     38% {
+        box-shadow: 1px 1px 3px white;
+        background: rgba(94, 17, 17, 0.05);
         transform: rotate(138deg);
     }
     50% {
@@ -739,13 +758,13 @@ footer {
     }
     60% {
         box-shadow: 1px 1px 3px white;
-        background: rgba(94, 17, 17, 0.05);
         transform: rotate(230deg);
     }
     75% {
         transform: rotate(270deg);
     }
     87% {
+        box-shadow: 1px 1px 3px var(silver);
         transform: rotate(317deg);
     }
     100% {
