@@ -36,7 +36,6 @@ function populateprojects(data){
 }  
 
 const contacts = [
-    {name: 'Telephone', contact : '0421 224 777'},
     {name: 'Email', contact : 'emtech.projectdevelopment@gmail'},
     {name : 'LinkedIn', contact : 'https://www.linkedin.com/in/elias-matta-b28858227/'},
     {name : 'GitHub', contact : 'https://github.com/emTech-projectDevelopment'}
